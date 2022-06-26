@@ -1,7 +1,7 @@
 
 package Model;
 
-public class Staff extends User{
+public abstract class Staff extends User{
     protected int nik;
 
     public Staff(int nik, String nama, String alamat, String ttl, String telepon) {

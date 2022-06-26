@@ -1,7 +1,7 @@
 
 package Model;
 
-public class Mahasiswa extends User {
+public abstract class Mahasiswa extends User {
     protected int nim;
     protected String jurusan;
 

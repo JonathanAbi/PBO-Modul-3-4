@@ -1,17 +1,17 @@
-
 package Model;
 
 import java.util.ArrayList;
 
-public class Magister extends Mahasiswa{
-    ArrayList<MatkulAmbil> mk;
+public class Magister extends Sarjana {
+
     private String judulPenelitianTesis;
 
-    public Magister(ArrayList<MatkulAmbil> mk, String judulPenelitianTesis, int nim, String jurusan, String nama, String alamat, String ttl, String telepon) {
-        super(nim, jurusan, nama, alamat, ttl, telepon);
-        this.mk = mk;
+    public Magister(String judulPenelitianTesis, ArrayList<MatkulAmbil> mk, int nim, String jurusan, String nama, String alamat, String ttl, String telepon) {
+        super(mk, nim, jurusan, nama, alamat, ttl, telepon);
         this.judulPenelitianTesis = judulPenelitianTesis;
     }
+
+    
 
     public ArrayList<MatkulAmbil> getMk() {
         return mk;
@@ -31,8 +31,7 @@ public class Magister extends Mahasiswa{
 
     @Override
     public String toString() {
-        return super.toString()+"Magister{" + "mk=" + mk + ", judulPenelitianTesis=" + judulPenelitianTesis + '}';
+        return super.toString() + "Magister{" + "mk=" + mk + ", judulPenelitianTesis=" + judulPenelitianTesis + '}';
     }
 
-    
 }

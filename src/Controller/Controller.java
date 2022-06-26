@@ -33,7 +33,7 @@ public class Controller {
         MatkulAmbil ambilMK2 = new MatkulAmbil(mk1, presensi2, 80, 65, 60);
         ArrayList<MatkulAmbil> mkAmbil2 = new ArrayList<>();
         mkAmbil2.add(ambilMK2);
-        Magister magister1 = new Magister(mkAmbil2, "Pentingnya berdoa", 1121061, "IF", "jeje", "akasia", "250103", "08211221556");
+        Magister magister1 = new Magister("Pentingnya berdoa",mkAmbil2, 1121061, "IF", "jeje", "akasia", "250103", "08211221556");
 
         PresensiStaff p5 = new PresensiStaff("08.00", "1/1/2021", 1);
         PresensiStaff p6 = new PresensiStaff("07.00", "8/1/2021", 0);
